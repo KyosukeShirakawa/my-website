@@ -1,6 +1,20 @@
 const burger = document.querySelector('.hamburger');
 const nav = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('.nav-menu li');
+const scrollBtn = document.querySelector('#scroll-down-icon');
+
+
+scrollBtn.addEventListener('click', () => {
+  window.scroll({
+    top: 1210,
+    behavior: "smooth"
+  });
+
+});
+
+
+
+
 
 burger.addEventListener('click', () => {
   nav.classList.toggle('nav-active');

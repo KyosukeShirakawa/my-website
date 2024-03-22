@@ -74,7 +74,7 @@ li {
 /* main */
 
 #main {
-  padding: 30px 10%;
+  padding: 50px 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,7 +132,7 @@ li {
   padding: 10px 0;
   border-top: 1px solid rgb(218, 218, 218);
   border-bottom: 1px solid rgb(218, 218, 218);
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .section-title h2 {
   font-weight: 400;
