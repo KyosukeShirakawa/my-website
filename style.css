@@ -27,6 +27,10 @@ header {
   
 }
 
+.logo {
+  font-weight: bold;
+  font-size: 2rem;
+}
 
 
 #nav-menu {
@@ -78,6 +82,14 @@ header {
 }
 
 
+#main-img {
+  height: 600px;
+  background-image:
+   url(images/main.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 /* my-work */
 #my-work {
   padding: 50px;
@@ -88,18 +100,47 @@ header {
   padding: 10px 0;
   border-top: 1px solid rgb(218, 218, 218);
   border-bottom: 1px solid rgb(218, 218, 218);
+  margin-bottom: 50px;
 }
 .section-title h2 {
   font-weight: 400;
+  
 }
 
 
-.grid-container {
+#grid-container {
   display: grid;
-  
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+
 }
 
 .card {
   border: 1px solid black;
+}
+
+.card .description {
+  padding: 10px;
+
+}
+
+.card .project {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+/* footer */
+
+footer {
+  padding: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+footer h2 {
+  margin-bottom: 20px;
 }
 
