@@ -16,28 +16,62 @@ a {
   color: black;
 }
 
+li {
+  list-style: none;
+}
+
 
 /* header */
-header {
+#desktop-nav {
   background-color: rgb(255, 251, 251);
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   box-shadow: 2px 2px 4px rgb(218, 218, 218);
+  height: 15vh;
   
 }
 
 .logo {
   font-weight: bold;
   font-size: 2rem;
+  align-self: center;
 }
 
 
-#nav-menu {
+.nav-menu {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  gap: 20px;
+  width: 38%;
+  transition: all 0.3s ease-in-out;
 } 
+
+
+.nav-menu a:hover {
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  
+}
+
+
+/* hamburger */
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger div{
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-active {
+  transform: translateX(0%) !important;
+}
 
 /* main */
 
@@ -144,3 +178,25 @@ footer h2 {
   margin-bottom: 20px;
 }
 
+
+@keyframes navLinksFade {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
