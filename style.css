@@ -147,18 +147,155 @@ li {
 
 }
 
+
+
+/* song card */
+
 .card {
+  border-radius: 5px;
   border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 7%;
+  color: white;
+  background-color: rgb(0, 0, 0);
 }
 
-.card .description {
-  padding: 10%;
+
+.card img {
+  width: 100%;
+  align-self: center;
+  border-radius: 6px;
 
 }
 
-.card .project {
+
+
+
+.card-top {
+  /* padding: 20px; */
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
+
+}
+
+.card-top-center {
+  text-align: center;
+}
+
+.play-from {
+  font-size: 10px;
+  text-align: center;
+}
+
+.playlist-name {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.arrow-down {
+  box-sizing: border-box;
+  height: 13px;
+  width: 13px;
+  border-style: solid;
+  border-color: white;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+}
+
+.song-description {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+
+}
+
+
+.song-left {
+  width: 80%;
+
+}
+
+.song-name {
+  font-size: 16px;
+}
+.song-artist  {
+  font-size: 14px;
+  opacity: 0.6;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+.check-icon {
+  background-color: #1db954;
+  padding: 3px;
+  width: 30px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.play-status {
+  padding: 10px 0;
+}
+.time {
+  display: flex;
+  justify-content: space-between;
+}
+.time p {
+  font-size: 10px;
+  opacity: 0.5;
+}
+
+.status-bar {
+  
+  border: 1.5px solid  rgb(114, 112, 112);
+  opacity: 0.5;
+}
+
+.operation-icon {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 13px;
+}
+
+.fa-regular.fa-shuffle {
+  font-size: 20px;
+  align-self: center;
+
+}
+
+.fa-solid.fa-backward-step {
+  font-size: 25px;
+  align-self: center;
+
+}
+.fa-sharp.fa-solid.fa-circle-play {
+  font-size: 45px;
+  align-self: center;
+}
+
+.fa-solid.fa-forward-step {
+  font-size: 25px;
+  align-self: center;
+
+}
+
+.fa-solid.fa-repeat {
+  font-size: 20px;
+  align-self: center;
+
 
 }
 
