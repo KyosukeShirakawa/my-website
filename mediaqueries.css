@@ -1,4 +1,6 @@
 @media screen and (max-width: 1024px) {
+
+  
   .nav-menu {
     width: 55%;
 
@@ -10,12 +12,7 @@
     overflow-x: hidden;
   }
 
-  #main h1{
-    
-    font-size: 4rem;
-    line-height: 80px;
 
-  }
 
 
   .nav-menu {
@@ -39,4 +36,12 @@
   .hamburger {
     display: block;
   }
+}
+
+@media screen and (max-width: 450px) {
+
+  #main h1 {
+    font-size: 4.2rem;
+  }
+
 }
