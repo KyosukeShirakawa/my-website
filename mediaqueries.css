@@ -10,6 +10,13 @@
     overflow-x: hidden;
   }
 
+  #main h1{
+    
+    font-size: 4rem;
+    line-height: 80px;
+
+  }
+
 
   .nav-menu {
     position: absolute;
